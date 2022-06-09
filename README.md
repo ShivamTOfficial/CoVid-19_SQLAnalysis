@@ -1,5 +1,5 @@
 # SQLCase_CoViD
-Hi all, please find all the neccesary resources/ files for the SQL Covid Database Case Study. Ping me, if you need anything, thanks!</br>
+Hi all, find below the the SQL Covid Database Case Study. Ping me, if you need anything, thanks!</br>
 All the queries below, gave been performed on MySQL Workbench & </br> 
 Visualizations have been created using Power BI Desktop </br> </br>
 [Watch Video Analysis by clicking ME! :)](https://www.youtube.com/watch?v=J0omdjocHeA)
