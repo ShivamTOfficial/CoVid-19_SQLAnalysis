@@ -1,6 +1,8 @@
 # SQLCase_CoViD
-Hi all, please find all the neccesary resources/ files for the SQL Covid Database Case Study. Ping me, if you need anything, thanks!
-All the queries below, have been performed on MySQL Workbench [(Watch Video Analysis)](https://www.youtube.com/watch?v=J0omdjocHeA)
+Hi all, please find all the neccesary resources/ files for the SQL Covid Database Case Study. Ping me, if you need anything, thanks!</br>
+All the queries below, gave been performed on MySQL Workbench & </br> 
+Visualizations have been created using Power BI Desktop </br> </br>
+[Watch Video Analysis by clicking ME! :)](https://www.youtube.com/watch?v=J0omdjocHeA)
 </br>
 
 ### Creating Database
@@ -48,7 +50,7 @@ CASUALTIES TABLE
     SELECT * FROM casualties_n_cases;
 
 ### Deriving Useful Insights
-*Likelihood of being Fully Vaccinated*
+*1] Likelihood of being Fully Vaccinated*
 
     SELECT iso_code,  location, 100 * max(people_fully_vaccinated)/population AS FullyVaccinatedPercentage
     FROM vaccinated
@@ -56,7 +58,12 @@ CASUALTIES TABLE
     GROUP BY iso_code
     ORDER BY FullyVaccinatedPercentage DESC;
 
-*Likelihood of being infected*
+
+![Vizualizing the Result on Power BI](https://user-images.githubusercontent.com/91784043/172777483-9b1cfdb5-79e5-45c1-8d99-22accb126a7d.png)
+</br>
+
+
+*2] Likelihood of being infected*
 
     SELECT iso_code,  location, 100 * max(total_cases)/population AS InfectedPercentage, population
     FROM casualties_n_cases
@@ -65,7 +72,12 @@ CASUALTIES TABLE
     ORDER BY InfectedPercentage DESC;
 
 
-*Countries with higher death rate than the global death rate*
+![Vizualizing the Result on Power BI](https://user-images.githubusercontent.com/91784043/172777687-5b424277-3890-4b2b-b0b3-0bf4668ab364.png)
+</br>
+
+
+
+*3] Countries with higher death rate than the global death rate*
 
     SELECT iso_code, location, avg(total_deaths) AS Avg_Deaths
     FROM casualties_n_cases
@@ -89,9 +101,10 @@ CASUALTIES TABLE
     GROUP BY iso_code, location
     HAVING Avg_Deaths > @globalaverage
     ORDER by 3 DESC;
+</br>
 
 
-*Density Of Total Cases Country-Wise*
+*4] Density Of Total Cases Country-Wise*
 
     SELECT iso_code, location, 100 * max(total_cases)/population AS PercentPopulationInfected, population
     FROM vaccinated
@@ -109,9 +122,10 @@ Creating a View
     WHERE iso_code NOT LIKE "OWID%"
     GROUP BY iso_code
     ORDER BY PercentPopulationInfected DESC;
+</br>
 
 
-*Continent wise break down and using Window Functions*
+*5] Continent wise break down and using Window Functions*
 
     SELECT continent, max(total_cases) as TotalCases, max(total_deaths) as TotalDeaths, SUM(population) OVER (partition by continent) AS Population
     FROM casualties_n_cases
