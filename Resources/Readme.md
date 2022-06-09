@@ -1,7 +1,7 @@
 # Hey There, 
 ### In this Folder you will Find
 
-1. The two .csv files used to work on the data </br>
+1. The two .csv files used for data analysis </br>
    a) casualties_n_cases.csv </br>
    b) vaccinated.csv
 2. One .pbix file which I used to visualize my findings.
