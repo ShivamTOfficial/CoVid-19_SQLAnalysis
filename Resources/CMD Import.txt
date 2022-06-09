@@ -1,0 +1,65 @@
+Importing large datasets to MySQL Workbench using Command Line
+
+Step 1. 
+	Open MySQL Workbench
+	Create a new Database (say Covid_Impact) to store the tables you'll import.
+	Create the table with matching data types of csv file, usually with INT and CHAR datatypes only (without the data) in the database you just created using Workbench.
+
+Step 2. 
+	Open the terminal or Command Prompt (Go to windows -> Search for cmd)
+
+Step 3. 
+	We'll now connect with MySQL database in command line prompt. Follow the steps below:
+	a. Copy the path of your MySQL bin directory in your computer. (Normally it is under c drive program files).
+	b. The bin directory of MySQL Server is generally in this path - C:\Program Files\MySQL\MySQL Server 8.0\bin
+	c. Now, in the Command Line prompt, type 
+	   	cd C:\Program Files\MySQL\MySQL Server 8.0\bin 
+	   and press enter.
+
+Step 4. 
+	Connect to the MySQL database using the following command in command Prompt: mysql -u root -p
+		(Please replace "root" with your user name that you must have configured while installing MySQL server)
+	Press enter, it will ask for the password, give your MySQL password
+
+Step 5. 
+	If you are successfully logged to mysql, then set the global variables by using below command so that data can be imported from local computer folder.
+	SET GLOBAL local_infile=1;
+
+
+It will return the following:
+Query OK, 0 rows affected (0.00 sec)
+
+
+Step 6. 
+	Quit current server connection:
+
+It will return the following:
+mysql> quit
+Bye
+
+
+Step 7. 
+	Load the file from CSV file to the MySQL database. In order to do this, please follow the commands:
+	(We'll connect with the MySQL server again with the local-infile system variable. 
+	 This basically means you want to upload data into a database table from your local machine)
+
+	mysql --local-infile=1 -u root -p
+	(give password)
+
+	Show Databases;
+
+	USE Covid_Impact;
+	(makes the database that you had created in step 1 as default schema to use for the next sql scripts)
+
+
+
+Step 8. 
+	The next step is to load the data from local case study folder into the vaccinated table in Covid_Impact Database)
+	LOAD DATA LOCAL INFILE 'C:\Users\Shivam Tyagi\Downloads\vaccinated.csv' INTO TABLE Covid_Impact FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\r\n' IGNORE 1 ROWS;
+
+
+NOTE(VERY IMP)- Make sure to replace single backward (\) slash in the path with double back slashes (\\)
+
+
+
+You're all set now! 
