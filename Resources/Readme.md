@@ -4,7 +4,7 @@
 1. The two .csv files used for data analysis </br>
    a) casualties_n_cases.csv </br>
    b) vaccinated.csv
-2. A .sql files which is the raw work, done on SQL (Covid_Impact.sql)
+2. A .sql files which is the raw work, done on SQL (Covid-Impact.sql)
 3. One .pbix file which I used to visualize my findings (Covid_Impact.pbix)
 4. A .txt file explaining how to import data using Command Line (CMD Imprt.txt)
 
