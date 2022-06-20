@@ -1,4 +1,4 @@
-# CoViD 19 Analysis
+# CoViD-19 Analysis
 Hi all, find below the the SQL Covid Database Case Study. Ping me, if you need anything, thanks!</br>
 All the queries below, gave been performed on MySQL Workbench & </br> 
 Visualizations have been created using Power BI Desktop </br> </br>
