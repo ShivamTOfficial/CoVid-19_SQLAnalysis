@@ -103,6 +103,8 @@ CASUALTIES TABLE
     ORDER by 3 DESC;
 </br>
 
+![image](https://user-images.githubusercontent.com/91784043/174632741-690cc3f1-7cc4-432f-ae44-fba6ece139e1.png)
+
 
 *4] Density Of Total Cases Country-Wise*
 
@@ -112,7 +114,7 @@ CASUALTIES TABLE
     GROUP BY iso_code
     ORDER BY PercentPopulationInfected DESC;
 
-Creating a View
+**Creating a View**
 
     DROP VIEW IF EXISTS CasesDensity;
     CREATE VIEW CasesDensity
