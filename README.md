@@ -129,7 +129,10 @@ CASUALTIES TABLE
 
 *5] Continent wise break down and using Window Functions*
 
-    SELECT continent, max(total_cases) as TotalCases, max(total_deaths) as TotalDeaths, SUM(population) OVER (partition by continent) AS Population
+    SELECT continent, 
+            max(total_cases) as TotalCases, 
+            max(total_deaths) as TotalDeaths, 
+            SUM(population) OVER (partition by continent) AS Population
     FROM casualties_n_cases
     WHERE iso_code NOT LIKE "OWID%"
     GROUP BY continent;
