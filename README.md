@@ -60,7 +60,11 @@ CASUALTIES TABLE
 
 
 ![Vizualizing the Result on Power BI](https://user-images.githubusercontent.com/91784043/172777483-9b1cfdb5-79e5-45c1-8d99-22accb126a7d.png)
-</br>
+
+
+<p align = "center">
+Likelihood of being Vaccinated
+</p>
 
 
 *2] Likelihood of being infected*
@@ -75,7 +79,9 @@ CASUALTIES TABLE
 ![Vizualizing the Result on Power BI](https://user-images.githubusercontent.com/91784043/172777687-5b424277-3890-4b2b-b0b3-0bf4668ab364.png)
 </br>
 
-
+<p align = "center">
+Likelihood of being Infected
+</p>
 
 *3] Countries with higher death rate than the global death rate*
 
@@ -104,6 +110,10 @@ CASUALTIES TABLE
 </br>
 
 ![image](https://user-images.githubusercontent.com/91784043/174632741-690cc3f1-7cc4-432f-ae44-fba6ece139e1.png)
+
+<p align = "center">
+Higher Death Rate than the Global Death Rate
+</p>
 
 
 *4] Density Of Total Cases Country-Wise*
@@ -139,3 +149,7 @@ CASUALTIES TABLE
 
 
 ![image](https://user-images.githubusercontent.com/91784043/175024709-32751d95-4ed9-44b6-b09c-1653cde34075.png)
+
+<p align = "center">
+Continent wise break down
+</p>
