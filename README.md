@@ -63,9 +63,9 @@ CASUALTIES TABLE
 
 
 <p align = "center">
-Likelihood of being Vaccinated
+Fig. 1: Likelihood of being Vaccinated
 </p>
-
+ </br>
 
 *2] Likelihood of being infected*
 
@@ -80,8 +80,9 @@ Likelihood of being Vaccinated
 </br>
 
 <p align = "center">
-Likelihood of being Infected
+Fig. 2: Likelihood of being Infected
 </p>
+</br>
 
 *3] Countries with higher death rate than the global death rate*
 
@@ -112,9 +113,9 @@ Likelihood of being Infected
 ![image](https://user-images.githubusercontent.com/91784043/174632741-690cc3f1-7cc4-432f-ae44-fba6ece139e1.png)
 
 <p align = "center">
-Higher Death Rate than the Global Death Rate
+Fig. 3: Higher Death Rate than the Global Death Rate
 </p>
-
+</br>
 
 *4] Density Of Total Cases Country-Wise*
 
@@ -151,5 +152,5 @@ Higher Death Rate than the Global Death Rate
 ![image](https://user-images.githubusercontent.com/91784043/175024709-32751d95-4ed9-44b6-b09c-1653cde34075.png)
 
 <p align = "center">
-Continent wise break down
+Fig 4: Continent wise break down
 </p>
