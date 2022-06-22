@@ -136,3 +136,6 @@ CASUALTIES TABLE
     FROM casualties_n_cases
     WHERE iso_code NOT LIKE "OWID%"
     GROUP BY continent;
+
+
+![image](https://user-images.githubusercontent.com/91784043/175024709-32751d95-4ed9-44b6-b09c-1653cde34075.png)
